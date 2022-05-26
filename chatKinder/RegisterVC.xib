@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Medium.otf">
+            <string>ProximaNova-Medium</string>
+        </array>
+        <array key="ProximaNova-Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC" customModule="Habit" customModuleProvider="target">
+            <connections>
+                <outlet property="authorization" destination="lhF-8O-t0U" id="PkB-1I-M5g"/>
+                <outlet property="emailTf" destination="6oU-iA-Om4" id="bLy-pO-hNc"/>
+                <outlet property="flagImage" destination="BfU-6x-AD8" id="ftv-bj-xXB"/>
+                <outlet property="langBtn" destination="JJn-3p-IeD" id="9ti-xP-i5q"/>
+                <outlet property="passwordTf" destination="RYU-b0-XEu" id="LmR-yW-uiC"/>
+                <outlet property="usernameTf" destination="QhU-3v-7Kc" id="8Cy-9Y-olQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hT3-Tb-tcX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mAw-lj-71O">
+                            <rect key="frame" x="40" y="321" width="334" height="134"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-3v-7Kc">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYU-b0-XEu">
+                                    <rect key="frame" x="0.0" y="50" width="334" height="34"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6oU-iA-Om4">
+                                    <rect key="frame" x="0.0" y="100" width="334" height="34"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-MX-17A">
+                            <rect key="frame" x="40" y="485" width="334" height="186"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lQh-Ea-bCd">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="116"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FC-HW-u8c">
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                            <color key="backgroundColor" red="0.231372565" green="0.50588238240000005" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="ceO-0U-7am"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="18"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Registor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="registrTapped:" destination="-1" eventType="touchUpInside" id="1j7-V7-Ao9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuz-Gl-DbW">
+                                            <rect key="frame" x="0.0" y="66" width="334" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="18"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Back">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="L8c-Mk-JJO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hvL-gH-t6p">
+                                    <rect key="frame" x="0.0" y="146" width="334" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-jb-r5C">
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="GqQ-se-bx8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="18"/>
+                                            <color key="tintColor" systemColor="systemTealColor"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Skip and o to app"/>
+                                            <connections>
+                                                <action selector="skipTapped:" destination="-1" eventType="touchUpInside" id="u6q-8Y-zXn"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="dzG-ni-miE">
+                            <rect key="frame" x="312" y="16" width="86" height="35"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-6x-AD8">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="KwC-BK-HTG"/>
+                                        <constraint firstAttribute="height" constant="35" id="jy5-N6-sFY"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJn-3p-IeD">
+                                    <rect key="frame" x="41" y="0.0" width="45" height="35"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="English"/>
+                                    <connections>
+                                        <action selector="langTapped:" destination="-1" eventType="touchUpInside" id="cqK-Q5-use"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="96" translatesAutoresizingMaskIntoConstraints="NO" id="gNe-Zh-Qc4">
+                            <rect key="frame" x="20" y="231" width="374" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhF-8O-t0U">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="50"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="lhF-8O-t0U" firstAttribute="top" secondItem="gNe-Zh-Qc4" secondAttribute="top" id="KSf-HU-kUR"/>
+                                <constraint firstItem="lhF-8O-t0U" firstAttribute="leading" secondItem="gNe-Zh-Qc4" secondAttribute="leading" id="QNP-9z-601"/>
+                                <constraint firstAttribute="trailing" secondItem="lhF-8O-t0U" secondAttribute="trailing" id="eMR-Tg-hBj"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hV9-MX-17A" firstAttribute="leading" secondItem="hT3-Tb-tcX" secondAttribute="leading" constant="40" id="NcN-QT-rY4"/>
+                        <constraint firstAttribute="trailing" secondItem="gNe-Zh-Qc4" secondAttribute="trailing" constant="20" id="NmQ-ng-omM"/>
+                        <constraint firstAttribute="trailing" secondItem="hV9-MX-17A" secondAttribute="trailing" constant="40" id="WCU-Ol-MdP"/>
+                        <constraint firstItem="gNe-Zh-Qc4" firstAttribute="leading" secondItem="hT3-Tb-tcX" secondAttribute="leading" constant="20" id="XfD-m8-lkC"/>
+                        <constraint firstItem="dzG-ni-miE" firstAttribute="top" secondItem="hT3-Tb-tcX" secondAttribute="top" constant="16" id="ZTt-XX-jUQ"/>
+                        <constraint firstItem="gNe-Zh-Qc4" firstAttribute="top" secondItem="dzG-ni-miE" secondAttribute="bottom" constant="180" id="aVR-ha-RnU"/>
+                        <constraint firstItem="hV9-MX-17A" firstAttribute="top" secondItem="mAw-lj-71O" secondAttribute="bottom" constant="30" id="bE0-b9-8Jj"/>
+                        <constraint firstAttribute="trailing" secondItem="mAw-lj-71O" secondAttribute="trailing" constant="40" id="bbl-q0-Nmr"/>
+                        <constraint firstAttribute="trailing" secondItem="dzG-ni-miE" secondAttribute="trailing" constant="16" id="dfb-F8-XEq"/>
+                        <constraint firstItem="mAw-lj-71O" firstAttribute="top" secondItem="gNe-Zh-Qc4" secondAttribute="bottom" constant="40" id="lcJ-b1-aUt"/>
+                        <constraint firstItem="mAw-lj-71O" firstAttribute="leading" secondItem="hT3-Tb-tcX" secondAttribute="leading" constant="40" id="mpt-kA-Q3E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hT3-Tb-tcX" secondAttribute="trailing" id="21a-5v-IYj"/>
+                <constraint firstItem="hT3-Tb-tcX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PGl-8m-ybq"/>
+                <constraint firstItem="hT3-Tb-tcX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YaN-EE-BdX"/>
+                <constraint firstAttribute="bottom" secondItem="hT3-Tb-tcX" secondAttribute="bottom" id="lII-3g-yKN"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,44 @@
+
+query GetMessages{
+    messages {
+  user_id
+  message_id
+  message
+  name
+}
+}
+
+
+mutation LoginUser($userName: String!, $password: String!) {
+  login (userName : $userName, password : $password) {
+  id
+  name
+}
+}
+
+ 
+mutation SignUp($userName: String!, $password: String!) {
+  signUp (userName : $userName, password : $password) {
+  id
+  name
+}
+}
+
+  
+mutation WriteMessage($message: String!, $userID: Int!){
+    writeMessage(message: $message, userID: $userID)
+}
+
+
+
+subscription Subscription {
+    newMessage {
+      user_id
+  message_id
+  message
+  name
+}
+}
+
+
+
